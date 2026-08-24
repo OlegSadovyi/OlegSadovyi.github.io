@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oleg Sadovyi — Product Work at MAUDAU</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#fbfaf9; --card:#ffffff; --ink:#1b1a20; --ink2:#4b4756; --ink3:#7a7684;
+  --line:#e7e4ec; --brand:#33205B; --accent:#6B4FA8; --chip-bg:#f1edf9; --chip-fg:#4a3480;
+  --good-bg:#e7f7ec; --good-fg:#1c6b3a; --shadow:0 1px 2px rgba(27,26,32,.05),0 8px 24px rgba(51,32,91,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#141317; --card:#1e1d23; --ink:#f4f2f7; --ink2:#c2bfcc; --ink3:#8e8a99;
+    --line:#302e39; --brand:#cdbcf3; --accent:#9B7BD4; --chip-bg:#272134; --chip-fg:#c9b6f0;
+    --good-bg:#17301f; --good-fg:#8fe0aa; --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.35);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#141317; --card:#1e1d23; --ink:#f4f2f7; --ink2:#c2bfcc; --ink3:#8e8a99;
+  --line:#302e39; --brand:#cdbcf3; --accent:#9B7BD4; --chip-bg:#272134; --chip-fg:#c9b6f0;
+  --good-bg:#17301f; --good-fg:#8fe0aa; --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.35);
+}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);
+  font-family:"IBM Plex Sans","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size:16px;line-height:1.62;padding:52px 22px 72px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:940px;margin:0 auto}
+.eyebrow{font-family:"Manrope",sans-serif;font-size:11.5px;font-weight:800;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink3)}
+h1{font-family:"Manrope",sans-serif;font-size:clamp(30px,5vw,44px);font-weight:800;line-height:1.08;
+  letter-spacing:-.025em;margin:10px 0 10px;text-wrap:balance}
+.tagline{font-size:18px;color:var(--ink2);max-width:60ch;text-wrap:balance}
+.meta{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:18px;font-size:13.5px;color:var(--ink3)}
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}
+.chip{font-family:"Manrope",sans-serif;font-size:13.5px;font-weight:800;padding:7px 14px;border-radius:999px;
+  background:var(--chip-bg);color:var(--chip-fg);font-variant-numeric:tabular-nums}
+.chip.good{background:var(--good-bg);color:var(--good-fg)}
+hr{border:0;border-top:1px solid var(--line);margin:34px 0}
+h2{font-family:"Manrope",sans-serif;font-size:14px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ink3);margin:0 0 10px}
+.cols{display:grid;grid-template-columns:1.35fr 1fr;gap:34px}
+p{color:var(--ink2);max-width:62ch}
+ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+li{position:relative;padding-left:17px;color:var(--ink2);font-size:15px}
+li::before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.shots{display:flex;flex-direction:column;gap:40px;margin-top:40px}
+figure{margin:0}
+.label{font-family:"Manrope",sans-serif;font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:9px}
+.frame{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);
+  overflow:hidden;cursor:zoom-in}
+.frame img{display:block;width:100%;height:auto}
+figcaption{font-size:14.5px;color:var(--ink2);margin-top:12px;max-width:66ch}
+footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);font-size:13px;color:var(--ink3)}
+footer a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
+footer a:hover,footer a:focus-visible{border-bottom-color:var(--accent)}
+a:focus-visible,.frame:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+#lb{position:fixed;inset:0;background:rgba(12,11,15,.92);display:none;align-items:center;justify-content:center;
+  padding:26px;z-index:50;cursor:zoom-out}
+#lb.on{display:flex}
+#lb img{max-width:100%;max-height:100%;border-radius:8px}
+@media(max-width:720px){ .cols{grid-template-columns:1fr;gap:24px} body{padding:36px 16px 56px} }
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-top:34px}
+.card{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:16px;
+  padding:24px 22px;box-shadow:var(--shadow);transition:transform .15s ease,border-color .15s ease}
+.card:hover,.card:focus-visible{transform:translateY(-2px);border-color:var(--accent)}
+.card .k{font-family:"Manrope",sans-serif;font-size:11.5px;font-weight:800;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--accent)}
+.card h3{font-family:"Manrope",sans-serif;font-size:21px;font-weight:800;color:var(--ink);margin:9px 0 8px;letter-spacing:-.015em}
+.card p{font-size:14.5px;color:var(--ink2);margin-bottom:14px;max-width:none}
+.card .m{display:inline-block;font-family:"Manrope",sans-serif;font-size:13px;font-weight:800;
+  background:var(--good-bg);color:var(--good-fg);padding:6px 12px;border-radius:999px;font-variant-numeric:tabular-nums}
+.intro{font-size:17px;color:var(--ink2);max-width:64ch;margin-top:14px}
+.stats{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:22px;font-size:13.5px;color:var(--ink3)}
+.stats b{font-family:"Manrope",sans-serif;color:var(--ink);font-weight:800;font-variant-numeric:tabular-nums}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Product Owner · MAUDAU · 2025–2026</div>
+    <h1>Oleg Sadovyi — product work at MAUDAU</h1>
+    <p class="intro">Three features I owned end to end at MAUDAU, a Ukrainian everyday-goods marketplace —
+    from framing the problem and its metrics through an A/B test to the roll-out decision.
+    Each page shows the shipped screens and what the numbers did.</p>
+    <div class="stats">
+      <span><b>17</b> months</span>
+      <span><b>71</b> epics, 44 shipped</span>
+      <span><b>6 of 16</b> company A/B tests</span>
+      <span><b>2</b> product teams</span>
+    </div>
+  </header>
+
+  <div class="grid">
+    <a class="card" href="favorites-lists.html">
+      <div class="k">Retention</div>
+      <h3>Favorites Lists</h3>
+      <p>A passive wishlist turned into a tool for planning purchases and sharing them with friends.</p>
+      <span class="m">+23% items added</span>
+    </a>    <a class="card" href="reorder-flow.html">
+      <div class="k">Frequency</div>
+      <h3>Reorder Flow</h3>
+      <p>One-click repeat purchase from four entry points. The mechanic was picked by a 122,910-user A/B test.</p>
+      <span class="m">+30% conversion to reorder</span>
+    </a>    <a class="card" href="state-cashback.html">
+      <div class="k">Payments</div>
+      <h3>State Cashback Payments</h3>
+      <p>Accepting a Ukrainian government benefit as a payment method, from catalogue entry through checkout.</p>
+      <span class="m">UAH 117M gross turnover</span>
+    </a>
+  </div>
+
+  <footer>
+    Screenshots are from the live maudau.com.ua storefront. Figures come from the MAUDAU experiment
+    registry, Superset dashboards and internal analytics.<br>
+    Oleg Sadovyi · Product Owner · <a href="https://www.linkedin.com/in/sadovyioleg" target="_blank" rel="noopener">linkedin.com/in/sadovyioleg</a>
+  </footer>
+</div>
+</body>
+</html>
